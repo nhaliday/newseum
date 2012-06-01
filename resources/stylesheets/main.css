@@ -9,7 +9,7 @@
 body {
     font-family: Questrial, Arial, sans-serif;
     font-size: 13px;
-    background-image:url('resources/images/wall4.png');
+    background-image:url('../images/wall4.png');
     background-repeat:repeat;
 }
 
