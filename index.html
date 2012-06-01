@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Newseum: Media and Yellowstone</title>
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="resources/stylesheets/main.css"></link>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="resources/scripts/jquery/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="resources/scripts/jquery/dragscrollable.js"></script>
+    <script type="text/javascript">
+           $(function() {
+                   // Set drag scroll on first descendant of class dragger on both selected elements
+                   $('#viewport, #base').
+                   dragscrollable({dragSelector: '.dragger:first', acceptPropagatedEvent: false});
+	 
+                });
+    </script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <h1 id="titlebar">Newseum: Media and Yellowstone</h1>
+    </div>
+
+    <div id="navigation">
+        <ul id="menu">
+            <li><a href="index.html">Main</a></li>
+            <li><a href="photographs.html">Photographs</a></li>
+            <li><a href="pictures.html">Pictures</a></li>
+            <li><a href="newspapers.html">Newspapers</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div id="viewport">
+            <div id="base">
+                <img src="resources/images/ywstone.jpg" alt="Map of
+                Yellowstone" class="dragger"/>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        Team Yellowstone
+        <br />
+        <a href="mailto:ProjectYellowstone2012@gmail.com">
+            ProjectYellowstone2012@gmail.com
+        </a>
+    </div>
+</div>
+</body>
+</html>

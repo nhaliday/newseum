@@ -1,0 +1,107 @@
+/* Basic Layout */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    font-family: Questrial, Arial, sans-serif;
+    font-size: 13px;
+    background-image:url('resources/images/wall4.png');
+    background-repeat:repeat;
+}
+
+#wrapper { 
+    margin: 0 auto;
+    width: 922px;
+}
+
+#header {
+    width: 900px;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #9999aa;
+    /* height: 100px; */
+    margin: 10px 0px 5px 0px;
+    background: #887788;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#navigation {
+    width: 900px;
+    color: #333;
+    padding: 10px;
+    font-size: 25px;
+    border: 1px solid #bbbbcc;
+    margin: 0px 0px 5px 0px;
+    background: #887788;
+}
+
+#menu li {
+    display: inline-block;
+    vertical-align: center;
+}
+
+#menu li a {
+    display: block;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 5px solid transparent;
+    font-family: Arial;
+}
+
+#menu li a:hover,
+#menu li a .clicked {
+    border-color: #005DAA;
+}
+
+#content { 
+    width: 900px;
+    height: 900px;
+    color: #333;
+    border: 1px solid #eeeeee;
+    background: #ffffff;
+    margin: 0px 0px 5px 0px;
+    padding: 10px;
+}
+
+#footer { 
+    width: 900px;
+    color: #333;
+    border: 1px solid #cccddd;
+    background: #887788;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+}
+
+/* Draggable Map */
+
+#viewport {
+    position: relative;
+    border: 1px solid #777;
+    background: white;
+    width: 900px;
+    height: 900px;
+    overflow: auto;
+}
+
+#base {
+    position: relative;
+    width: 900px;
+    height: 900px;
+    overflow: auto;
+}
+
+/* Gallery */
+
+#galleria {
+    width: 900px;
+    height: 900px;
+}
