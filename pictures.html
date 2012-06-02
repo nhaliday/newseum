@@ -9,6 +9,7 @@
 
     <!-- SCRIPTS -->
     <script type="text/javascript" src="resources/scripts/jquery/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="resources/scripts/galleria/galleria-1.2.7.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -27,12 +28,42 @@
     </div>
 
     <div id="content">
-        <div id="viewport">
-            <div id="base">
-                <img src="resources/images/ywstone.jpg" alt="Map of
-                Yellowstone" class="dragger"/>
-            </div>
-        </div>
+        <div id="galleria"></div>
+        <script>
+            var data =
+            [
+                {
+                    "image": "resources/images/pictures/19.jpg"
+                }, 
+                {
+                    "image": "resources/images/pictures/31-b.jpg"
+                }, 
+                {
+                    "image": "resources/images/pictures/33.jpg"
+                }, 
+                {
+                    "image": "resources/images/pictures/38castlegeyser.jpg"
+                }, 
+                {
+                    "image": "resources/images/pictures/40hotsprings.jpg"
+                }, 
+                {
+                    "image": "resources/images/pictures/GardinerRiver.jpg"
+                }, 
+                {
+                    "image": "resources/images/pictures/upper_falls_of_yellowstone.jpg"
+                }, 
+                {
+                    "image": "resources/images/pictures/yellowstonebig.jpg"
+                }
+            ];
+                        
+            Galleria.loadTheme('resources/scripts/galleria/themes/classic/galleria.classic.min.js');
+            Galleria.run('#galleria', {
+                dataSource: data,
+                show_imagenav: true
+            });
+        </script>
     </div>
 
     <div id="footer">

@@ -9,6 +9,7 @@
 
     <!-- SCRIPTS -->
     <script type="text/javascript" src="resources/scripts/jquery/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="resources/scripts/galleria/galleria-1.2.7.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -27,6 +28,39 @@
     </div>
 
     <div id="content">
+        <div id="galleria"></div>
+        <script>
+            var data =
+            [
+                {
+                    "image": "resources/images/newspapers/Bad_Highways.jpg"
+                }, 
+                {
+                    "image": "resources/images/newspapers/Cross_Country_Travel.jpg"
+                }, 
+                {
+                    "image": "resources/images/newspapers/DisplayAd20.jpg"
+                }, 
+                {
+                    "image": "resources/images/newspapers/DisplayAd25.jpg"
+                }, 
+                {
+                    "image": "resources/images/newspapers/DisplayAd276.jpg"
+                }, 
+                {
+                    "image": "resources/images/newspapers/UnionPacific.jpg"
+                }, 
+                {
+                    "image": "resources/images/newspapers/Vistors_to_NPs.jpg"
+                }
+            ];
+                        
+            Galleria.loadTheme('resources/scripts/galleria/themes/classic/galleria.classic.min.js');
+            Galleria.run('#galleria', {
+                dataSource: data,
+                show_imagenav: true
+            });
+        </script>
     </div>
 
     <div id="footer">
